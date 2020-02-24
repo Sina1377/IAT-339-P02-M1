@@ -22,14 +22,17 @@
 
   <div class="header">
     <header>
-      <img src="img/logo.png" alt="Image of 1 roasting logo">
-      <a href="#">About</a>
-      <a href="#">Shop</a>
-      <a href="#">Events</a>
-      <a href="#">Style Guide</a>
-
+      <a  href="index.html"> <img id="head-img" src="img/logo2.png" alt="Image of 1 roasting logo"> </a>
+      <a  href="index.html"> <img id="head-img" src="img/logo.png" alt="Image of 1 roasting logo"> </a>
+        <a href="#">About</a>
+        <a href="#">Shop</a>
+        <a href="#">Events</a>
+        <a href="#">Style Guide</a>
     </header>
   </div>
+
+
+
   <div class="container">
     <div class="nav-container">
       <nav>
@@ -39,6 +42,8 @@
         <a href="#navigation-elements">Navigation</a>
         <a href="#color-elements">Colour</a>
         <a href="#image-elements">Imaging</a>
+        <a href="#product-element">Product Listing</a>
+        <a href="#payment-element">Payment Forms</a>
       </nav>
 
     </div>
@@ -88,6 +93,17 @@
             voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
             quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
             autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </div>
+
+        <div class="list-elements">
+
+          <h2>List Items</h2>
+          <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+          </ol>
+
         </div>
 
       </section>
@@ -146,6 +162,77 @@
           <a href="#">Style Guide</a>
         </div>
       </section>
+
+      <!-- Product Listing Section -->
+      <section id="product-element">
+
+        <h1>Product Listing</h1>
+        <hr>
+        <div class="product-element">
+          <div class="card">
+            <img style="width:100%;" src="img/product1.jpg" alt="Image of a cofee bag">
+            <h3>Bonko Sidama</h3>
+            <p class="price"> $23.95</p>
+            <p>A sweet choclate Ethiopian blend. Click <a href="#">here</a> to learn more.</p>
+            <p><button> Add to Cart</button></p>
+          </div>
+
+          <div class="card">
+            <img style="width:100%;" src="img/product3.jpg" alt="Image of a cofee bag">
+            <h3>El Capitan</h3>
+            <p class="price"> $22.70</p>
+            <p>A dark blend from Latin America with fruity notes. Click <a href="#">here</a> to learn more.
+            </p>
+            <p><button> Add to Cart</button></p>
+          </div>
+
+          <div class="card">
+            <img style="width:100%;" src="img/product2.jpg" alt="Image of a cofee bag">
+            <h3>The Narrows</h3>
+            <p class="price">$24.30</p>
+            <p>A wild blend of Latin America, Africa and Indonisia. Click <a href="#">here</a> to learn more.
+            </p>
+            <p><button> Add to Cart</button></p>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section id="payment-element">
+        <h1>Payment Forms</h1>
+        <hr>
+        <div class="checkout_element ">
+          <section>
+            <h3>Checkout</h3>
+            <form>
+              <input type="text" placeholder="Card number">
+              <input type="text" placeholder="Name on card">
+              <div class="half">
+                <input type="text" placeholder="MM/YY">
+                <input type="text" placeholder="CVC">
+              </div>
+              <button type="submit"> Pay Now </button>
+            </form>
+          </section>
+        </div><!-- /checkout_element -->
+
+        <div class="cart_element">
+          <section>
+            <h2>Shopping Cart</h2>
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+            <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+            <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+            <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+            <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+          </section>
+        </div><!-- /shopping_element -->
+
+
+      </section>
+
 
       <!--  Colour Section -->
 
