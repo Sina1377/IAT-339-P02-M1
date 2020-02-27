@@ -12,6 +12,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/Styleguide.css">
+  <link rel="stylesheet" href="css/home.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
   <title>One Roasted Coffee</title>
 
 </head>
@@ -20,35 +23,32 @@
 
 
 
-  <div class="header">
-    <header>
-        <nav>
-      <img src="img/logo.png" alt="Image of 1 roasting logo">
-      <a href="#">About</a>
-      <a href="#">Shop</a>
-      <a href="#">Events</a>
-      <a href="#">Style Guide</a>
-        </nav>
+  <section id="navigation">
+    <nav>
+      <div class="logo ">
+        <a href="index.html"> <img src="img/logo.png" alt="Image of 1 roasting logo" onmouseover="this.src='img/logo2.png'" onmouseout="this.src='img/logo.png'"></a>
+      </div>
 
-    </header>
-  </div>
+
+      <ul class="nav-links">
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="style.html"> Style Guide</a></li>
+      </ul>
+      <a href="cart.html"><img class="checkout" src="img/checkout.png" alt="logo" onmouseover="this.src='img/checkout2.png'" onmouseout="this.src='img/checkout.png'" /></a>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </section>
 
 
 
   <div class="container">
-    <div class="nav-container">
-      <nav>
-        <h3>Style Components</h3>
-        <a href="#type-elements">Typography</a>
-        <a href="#link-elements">Link Elements</a>
-        <a href="#navigation-elements">Navigation</a>
-        <a href="#color-elements">Colour</a>
-        <a href="#image-elements">Imaging</a>
-        <a href="#product-element">Product Listing</a>
-        <a href="#payment-element">Payment Forms</a>
-      </nav>
 
-    </div>
 
     <div class="body-container">
 
@@ -157,12 +157,28 @@
       <section id="navigation-elements">
         <h2>Navigation</h2>
 
-        <div class="header">
-          <a href="#">About</a>
-          <a href="#">Shop</a>
-          <a href="#">Events</a>
-          <a href="#">Style Guide</a>
-        </div>
+        <section id="navigation">
+          <nav>
+            <div class="logo ">
+              <a href="index.html"> <img src="img/logo.png" alt="Image of 1 roasting logo" onmouseover="this.src='img/logo2.png'" onmouseout="this.src='img/logo.png'"></a>
+            </div>
+
+
+            <ul class="nav-links">
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="style.html"> Style Guide</a></li>
+            </ul>
+            <a href="cart.html"><img class="checkout" src="img/checkout.png" alt="logo" onmouseover="this.src='img/checkout2.png'" onmouseout="this.src='img/checkout.png'" /></a>
+
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </section>
+
       </section>
 
       <!-- Product Listing Section -->
@@ -301,6 +317,23 @@
     </div>
 
   </div>
+
+
+  <footer>
+    <div class="wrapper">
+      <a class="logo" href="#">Chase</a>
+      <div class="footer-left">
+        <p class="copyright">Copyright One Roasted Coffee</p>
+        <p class="footer-links"><a href="#">Contact Us</a> I <a href="#">Terms &amp; Conditions</a> I<a href="#">Privacy</a></p>
+      </div>
+      <div class="footer-right">
+        <a href="#" class="social facebook">Facebook</a>
+        <a href="#" class="social twitter">Facebook</a>
+        <a href="#" class="social google">Facebook</a>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </footer>
 
 </body>
 

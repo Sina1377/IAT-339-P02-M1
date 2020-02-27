@@ -753,3 +753,28 @@ footer a.social.google {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+
+.cart_element a {
+  color: #F28705;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cart_element {
+  padding: 5px 20px 15px 20px;
+  border-radius: 3px;
+  max-width: 80%;
+	margin: auto;
+	margin-top: 6em;
+	margin-bottom: 6em;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+.image_element img{
+  max-width: 400px;
+}
