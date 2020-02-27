@@ -778,3 +778,60 @@ span.price {
 .image_element img{
   max-width: 400px;
 }
+
+
+.contact-section {
+	text-align: left;
+	padding: 100px 0;
+	background: #fff;
+}
+
+.contact-section p.subtitle {
+	text-align: left;
+	color: #241C15;
+	font-size: 17px;
+	margin-bottom: 40px;
+}
+
+.contact-section .image {
+	text-align: center;
+}
+
+.contact-section .image.align-left {
+	float: left;
+	width: 50%;
+	padding: 0 20px;
+}
+
+.contact-section .text.align-left {
+	float: left;
+	width: 50%;
+	padding: 0 10% 0 40px;
+}
+
+.contact-section .image.align-right {
+	float: right;
+	width: 50%;
+	padding: 0 20px;
+}
+
+.contact-section .text.align-right{
+	float: right;
+	width: 50%;
+	padding: 0 40px 0 10%;
+}
+
+
+.contact-section .text.align-center {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.contact-section .text.align-center p.subtitle {
+	text-align: center;
+}
+
+.contact-section ul.list-checkmarks {
+	margin-top: 40px;
+}
