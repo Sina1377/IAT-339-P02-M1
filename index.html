@@ -1,306 +1,115 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<title>One Roasted Coffee</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Fonts from google  -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700,900&display=swap" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
-
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="css/main.css">
-  <title>One Roasted Coffee</title>
+	<link rel="stylesheet" href="css/home.css">
+	<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
 
+	<!-- Navigation section -->
+	<section id="navigation">
+		<nav>
+			<div class="logo">
+				<a href="index.html"> <img src="img/logo.png" alt="Image of 1 roasting logo" onmouseover="this.src='img/logo2.png'" onmouseout="this.src='img/logo.png'"></a>
+			</div>
+
+
+			<ul class="nav-links">
+				<li><a href="products.html">Products</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="style.html"> Style Guide</a></li>
+			</ul>
+				<a href="#"><img class="checkout" src="img/checkout.png" alt="logo" onmouseover="this.src='img/checkout2.png'" onmouseout="this.src='img/checkout.png'"/></a>
+
+
+
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</section>
+
+	<!-- Banner section -->
+	<section id="banner">
+		<div class="wrapper">
+			<h2>One Roasted <span class="coffee">Coffee</span></h2>
+			<p class="subtitle">IAT 339</p>
+			<div class="buttons">
+				<a href="#" class="button-1">Buy</a>
+				<a href="#" class="button-2">Find out More</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- About section -->
+	<section class="text-section">
+		<div class="wrapper">
+			<div class="image align-left">
+				<img src="img/p.jpeg" alt="" class="align-left">
+			</div>
+			<div class="text align-left">
+				<h3>About Us</h3>
+				<p class="subtitle">The World Famous Coffee Been</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida blandit lacus a laoreet. Nullam sollicitudin urna metus, at malesuada orci fringilla in. Curabitur eleifend risus vitae ligula semper scelerisque. Nulla sed nisl nulla.
+				</p>
+				<p>Fusce interdum suscipit ipsum, quis mattis metus posuere sit amet. Mauris rutrum imperdiet tortor.</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</section>
+
+	<section class="text-section">
+		<div class="wrapper">
+			<div class="image align-right">
+				<img src="img/p.jpeg" alt=" " class="align-left" style="margin-top: 60px;">
+			</div>
+			<div class="text align-right">
+				<h3>UPDATES</h3>
+				<p class="subtitle">Get our latest news right here</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida blandit lacus a laoreet. Nullam sollicitudin urna metus, at malesuada orci fringilla in. </p>
+				<ul class="list-checkmarks">
+					<li>Curabitur eleifend risus vitae ligula semper scelerisque.</li>
+					<li>Fusce interdum suscipit ipsum.</li>
+					<li>Quis mattis metus posuere sit amet.</li>
+					<li>Mauris rutrum imperdiet tortor.</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</section>
+
+
+
+	<!-- Footer section -->
+	<footer>
+		<div class="wrapper">
+			<a class="logo" href="#">Chase</a>
+			<div class="footer-left">
+				<p class="copyright">Copyright One Roasted Coffee</p>
+				<p class="footer-links"><a href="#">Contact Us</a> I <a href="#">Terms &amp; Conditions</a> I<a href="#">Privacy</a></p>
+			</div>
+			<div class="footer-right">
+				<a href="#" class="social facebook">Facebook</a>
+				<a href="#" class="social twitter">Facebook</a>
+				<a href="#" class="social google">Facebook</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</footer>
+
+	<script src="app.js"></script>
 
 
-  <div class="header">
-    <header>
-        <nav>
-      <img src="img/logo.png" alt="Image of 1 roasting logo">
-      <a href="#">About</a>
-      <a href="#">Shop</a>
-      <a href="#">Events</a>
-      <a href="#">Style Guide</a>
-        </nav>
 
-    </header>
-  </div>
-
-
-
-  <div class="container">
-    <div class="nav-container">
-      <nav>
-        <h3>Style Components</h3>
-        <a href="#type-elements">Typography</a>
-        <a href="#link-elements">Link Elements</a>
-        <a href="#navigation-elements">Navigation</a>
-        <a href="#color-elements">Colour</a>
-        <a href="#image-elements">Imaging</a>
-        <a href="#product-element">Product Listing</a>
-        <a href="#payment-element">Payment Forms</a>
-      </nav>
-
-    </div>
-
-    <div class="body-container">
-
-      <!-- Typograghic Section -->
-
-      <section id="type-elements">
-
-
-        <h1>Typography</h1>
-        <hr>
-
-        <h2>Fonts</h2>
-
-        <div class="type-photos">
-
-          <p>'Playfair Display'</p>
-          <img src="img/playfair.png" alt="playfair" />
-          <br><br>
-
-          <p>'Futura PT'</p>
-          <img src="img/futura.png" alt="futura" />
-          <br><br>
-
-          <p>'Arimo'</p>
-          <img src="img/arimo.png" alt="arimo" />
-
-        </div>
-
-        <div class="type-elements">
-          <h2>Type Scale</h2>
-
-
-          <h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-
-        </div>
-
-        <div class="paragraphs">
-          <h2>Paragraphs</h2>
-          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-            quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-            autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        </div>
-
-        <div class="list-elements">
-
-          <h2>List Items</h2>
-          <ol>
-            <li>List item 1</li>
-            <li>List item 2</li>
-            <li>List item 3</li>
-          </ol>
-
-        </div>
-
-      </section>
-
-      <br>
-
-      <!--  Element Section -->
-
-      <section id="link-elements">
-
-        <h1>Elements</h1>
-        <hr>
-
-        <h2>Buttons</h2>
-        <div class="buttons">
-          <a href="#" class="button-1">Buy</a>
-          <a href="#" class="button-2">Find out More</a>
-        </div><br>
-
-        <h2>Forms</h2>
-        <div class="form-container">
-
-
-          <form>
-            <label for="firstname">First name:</label><br>
-            <input id="firstname" type="text" name="firstname"><br>
-            <label for="lastname">Last name:</label><br>
-            <input id="lastname" type="text" name="lastname"><br><br>
-
-            <input type="radio" name="gender" value="male" checked> Male<br>
-            <input type="radio" name="gender" value="female"> Female<br><br>
-
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-          </form>
-        </div>
-
-        <h2>Hyperlinks</h2>
-
-        <a href=“mailto:oneroastedcoffee@gmail.com” class="hyperlink">Contact Us</a><br><br>
-
-        <a href="https://en.wikipedia.org/wiki/Coffee_bean"><img src="img/bean.jpeg" title="coffee bean" width="200" height="120" /></a>
-
-      </section>
-      <br>
-
-      <!-- Navigation Section -->
-
-      <section id="navigation-elements">
-        <h2>Navigation</h2>
-
-        <div class="header">
-          <a href="#">About</a>
-          <a href="#">Shop</a>
-          <a href="#">Events</a>
-          <a href="#">Style Guide</a>
-        </div>
-      </section>
-
-      <!-- Product Listing Section -->
-      <section id="product-element">
-
-        <h1>Product Listing</h1>
-        <hr>
-        <div class="product-element">
-          <div class="card">
-            <img style="width:100%;" src="img/product1.jpg" alt="Image of a cofee bag">
-            <h3>Bonko Sidama</h3>
-            <p class="price"> $23.95</p>
-            <p>A sweet choclate Ethiopian blend. Click <a href="#">here</a> to learn more.</p>
-            <p><button> Add to Cart</button></p>
-          </div>
-
-          <div class="card">
-            <img style="width:100%;" src="img/product3.jpg" alt="Image of a cofee bag">
-            <h3>El Capitan</h3>
-            <p class="price"> $22.70</p>
-            <p>A dark blend from Latin America with fruity notes. Click <a href="#">here</a> to learn more.
-            </p>
-            <p><button> Add to Cart</button></p>
-          </div>
-
-          <div class="card">
-            <img style="width:100%;" src="img/product2.jpg" alt="Image of a cofee bag">
-            <h3>The Narrows</h3>
-            <p class="price">$24.30</p>
-            <p>A wild blend of Latin America, Africa and Indonisia. Click <a href="#">here</a> to learn more.
-            </p>
-            <p><button> Add to Cart</button></p>
-          </div>
-
-
-        </div>
-      </section>
-
-      <section id="payment-element">
-        <h1>Payment Forms</h1>
-        <hr>
-        <div class="checkout_element ">
-          <section>
-            <h3>Checkout</h3>
-            <form>
-              <input type="text" placeholder="Card number">
-              <input type="text" placeholder="Name on card">
-              <div class="half">
-                <input type="text" placeholder="MM/YY">
-                <input type="text" placeholder="CVC">
-              </div>
-              <button type="submit"> Pay Now </button>
-            </form>
-          </section>
-        </div><!-- /checkout_element -->
-
-        <div class="cart_element">
-          <section>
-            <h2>Shopping Cart</h2>
-            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-            <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-            <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-            <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-            <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-            <hr>
-            <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-          </section>
-        </div><!-- /shopping_element -->
-
-
-      </section>
-
-
-      <!--  Colour Section -->
-
-      <section id="color-elements">
-
-        <h1>Colour</h1>
-        <hr>
-
-        <div class="color-elements">
-
-          <h3>Primary Colour Palette</h3>
-
-          <div class="primary-color-container">
-
-            <img src="img/gold.png" alt="gold" class="responsive" />
-            <p>#D4AF37 <br>Gold </p>
-
-            <img src="img/000.png" alt="black" class="responsive" />
-            <p>#000000 <br>Black</p>
-
-          </div>
-
-          <h3>Secondary Colour Palette</h3>
-
-          <div class="secondary-color-container">
-
-            <img src="img/fff.png" alt="white" class="responsive" />
-            <p>#FFFFFF <br>White</p>
-
-            <img src="img/444.png" alt="darkgrey" class="responsive" />
-            <p>#444444 <br>Grey</p>
-
-          </div>
-
-          <p>The combination of gold and black gives people a sense of jumping in low-key and high-end. Gold can give customers a high-level feeling and convey the product positioning of our premium coffee beans. Black gives a smart, concise feeling,
-            close to the original color of coffee beans.</p>
-
-        </div>
-
-
-      </section>
-
-      <!--  Image Section -->
-
-      <section id="image-elements">
-
-        <h1>Image</h1>
-        <hr>
-
-        <div class="images-container">
-
-          <img src="img/organic.png" alt="organic" />
-
-          <img src="img/gold.jpg" alt="gold" />
-
-          <img src="img/nature.jpeg" alt="nature" />
-
-          <img src="img/handmade.jpg" alt="handmade" />
-
-        </div>
-        <p>The picture we choose will convey the excellent quality of our coffee beans, which are organic, handmade, high-end, and natural.</p>
-      </section>
-
-    </div>
-
-  </div>
 
 </body>
 

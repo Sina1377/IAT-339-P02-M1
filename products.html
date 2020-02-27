@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>One Roasted Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/home.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <!-- Navigation section -->
+  <section id="navigation">
+    <nav>
+      <div class="logo">
+        <a href="index.html"> <img src="img/logo.png" alt="Image of 1 roasting logo" onmouseover="this.src='img/logo2.png'" onmouseout="this.src='img/logo.png'"></a>
+      </div>
+
+
+      <ul class="nav-links">
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="style.html"> Style Guide</a></li>
+      </ul>
+      <a href="#"><img class="checkout" src="img/checkout.png" alt="logo" onmouseover="this.src='img/checkout2.png'" onmouseout="this.src='img/checkout.png'" /></a>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </section>
+
+  <div class="cardPage">
+
+    <h2 class="products">Products</h2>
+
+
+    <div class="product-element">
+      <div class="card">
+        <img style="width:100%;" src="img/product1.jpg" alt="Image of a cofee bag">
+        <h4>Bonko Sidama</h4>
+        <p id="price"> $23.95</p>
+        <p>A sweet choclate Ethiopian blend. Click <a href="#" onClick="return false;" id="myBtn">here</a> to learn more.</p>
+
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/product1.jpg" alt="Image of a cofee bag">
+            <h4>Bonko Sidama</h4>
+            <p>Suspendisse vulputate magna urna, nec fermentum risus lobortis ac. Duis pharetra, eros dignissim imperdiet tincidunt, ipsum nunc placerat purus, quis maximus nisi neque a velit. Quisque volutpat, risus vel rhoncus suscipit, eros sem
+              malesuada massa, sit amet semper justo ante eget mauris. Maecenas vitae tincidunt ipsum. Cras augue magna, imperdiet et enim posuere, ornare accumsan est. Pellentesque nec est sed elit euismod laoreet. Cras sed ante ac erat porta
+              aliquet ut sit amet nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin id dui lorem. Mauris placerat rutrum lectus, eget pulvinar eros iaculis non.</p>
+              <h5 id="price"> Price: $23.95</h5>
+
+          </div>
+
+        </div>
+
+
+        <a href="#"><button>Add to Cart</button></a>
+      </div>
+
+      <div class="card">
+        <img style="width:100%;" src="img/product3.jpg" alt="Image of a cofee bag">
+        <h4>El Capitan</h4>
+        <p id="price"> $22.70</p>
+        <p>A dark blend from Latin America with fruity notes. Click <a href="#" onClick="return false;">here</a> to learn more.
+        </p>
+        <a href="#"><button>Add to Cart</button></a>
+      </div>
+
+      <div class="card">
+        <img style="width:100%;" src="img/product2.jpg" alt="Image of a cofee bag">
+        <h4>The Narrows</h4>
+        <p id="price">$24.30</p>
+        <p>A wild blend of Latin America, Africa and Indonisia. Click <a href="#" onClick="return false;">here</a> to learn more.
+        </p>
+        <a href="#"><button>Add to Cart</button></a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <a class="logo" href="#">Chase</a>
+      <div class="footer-left">
+        <p class="copyright">Copyright One Roasted Coffee</p>
+        <p class="footer-links"><a href="#">Contact Us</a> I <a href="#">Terms &amp; Conditions</a> I<a href="#">Privacy</a></p>
+      </div>
+      <div class="footer-right">
+        <a href="#" class="social facebook">Facebook</a>
+        <a href="#" class="social twitter">Facebook</a>
+        <a href="#" class="social google">Facebook</a>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
