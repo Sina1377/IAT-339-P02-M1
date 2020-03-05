@@ -974,3 +974,13 @@ span.price {
 
   border-bottom: 1px solid black;
 }
+
+.citation{
+  margin: auto;
+  padding: 1.5em;
+  padding-bottom: 2em;
+  max-width: 600px;
+  font-size: .9em;
+  margin-bottom: 12em;
+
+}
