@@ -25,6 +25,7 @@
       <ul class="nav-links">
         <li><a href="products.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="review.html"> Reviews</a></li>
         <li><a href="style.html"> Style Guide</a></li>
       </ul>
       <a href="cart.html"><img class="checkout" src="img/checkout.png" alt="logo" onmouseover="this.src='img/checkout2.png'" onmouseout="this.src='img/checkout.png'" /></a>
@@ -47,7 +48,7 @@
         <img style="width:100%;" src="img/product1.jpg" alt="Image of a cofee bag">
         <h4>Bonko Sidama</h4>
         <p id="price"> $23.95</p>
-        <p>A sweet choclate Ethiopian blend. Click <a href="#" onClick="return false;" id="myBtn">here</a> to learn more.</p>
+        <p>A sweet choclate Ethiopian blend. Click <a style="cursor:pointer;" id="myBtn">here</a> to learn more.</p>
 
         <div id="myModal" class="modal">
 
@@ -56,35 +57,63 @@
             <span class="close">&times;</span>
             <img src="img/product1.jpg" alt="Image of a cofee bag">
             <h4>Bonko Sidama</h4>
-            <p>Suspendisse vulputate magna urna, nec fermentum risus lobortis ac. Duis pharetra, eros dignissim imperdiet tincidunt, ipsum nunc placerat purus, quis maximus nisi neque a velit. Quisque volutpat, risus vel rhoncus suscipit, eros sem
-              malesuada massa, sit amet semper justo ante eget mauris. Maecenas vitae tincidunt ipsum. Cras augue magna, imperdiet et enim posuere, ornare accumsan est. Pellentesque nec est sed elit euismod laoreet. Cras sed ante ac erat porta
-              aliquet ut sit amet nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin id dui lorem. Mauris placerat rutrum lectus, eget pulvinar eros iaculis non.</p>
-              <h5 id="price"> Price: $23.95</h5>
+            <p> In Latin America, coffee farms are often run by families, with their own homes on the same land where their coffee grows. We’ve sipped coffee with these farmers for decades, sitting on their verandas, overlooking the lush beauty of
+              the coffee trees rolling out in the distance. Most times it was a lightly roasted coffee like this one. It took us more than 80 tries to get it right—mellow and flavorful with a nice softness.</p>
+            <h5 id="price"> Price: $23.95</h5>
 
           </div>
 
         </div>
 
 
-        <a href="#"><button>Add to Cart</button></a>
+      <a href="cart.html">  <button style="cursor:pointer;">Add to Cart</button></a>
       </div>
 
       <div class="card">
         <img style="width:100%;" src="img/product3.jpg" alt="Image of a cofee bag">
         <h4>El Capitan</h4>
         <p id="price"> $22.70</p>
-        <p>A dark blend from Latin America with fruity notes. Click <a href="#" onClick="return false;">here</a> to learn more.
+        <p>A dark blend from Latin America with fruity notes. Click <a style="cursor:pointer;" id="myBtn2">here </a>to learn more.
         </p>
-        <a href="#"><button>Add to Cart</button></a>
+        <div id="myModal2" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close2">&times;</span>
+            <img src="img/product3.jpg" alt="Image of a cofee bag">
+            <h4>El Capitan</h4>
+            <p>Wake up to an inviting Latin American coffee that's as mild and welcoming as a gentle sunrise. We've carefully roasted these beans just enough to bring out their nutty flavor and a touch of acidity, culminating in a crisp and pleasant
+              finish.</p>
+            <h5 id="price"> Price: $22.70</h5>
+
+          </div>
+
+        </div>
+
+        <a href="cart.html"><button style="cursor:pointer;">Add to Cart</button></a>
       </div>
 
       <div class="card">
         <img style="width:100%;" src="img/product2.jpg" alt="Image of a cofee bag">
         <h4>The Narrows</h4>
         <p id="price">$24.30</p>
-        <p>A wild blend of Latin America, Africa and Indonisia. Click <a href="#" onClick="return false;">here</a> to learn more.
+        <p>A wild blend of Latin America, Africa and Indonisia. Click <a style="cursor:pointer;" id="myBtn3">here</a> to learn more.
         </p>
-        <a href="#"><button>Add to Cart</button></a>
+        <div id="myModal3" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close3">&times;</span>
+            <img src="img/product2.jpg" alt="Image of a cofee bag">
+            <h4>The Narrows</h4>
+            <p>Jump-start the day with this delightfully smooth, eye-opening coffee. Crafted to make every spring morning bright no matter the weather, Sunrise Blend has an approachable taste and a smooth, creamy body. It's a blend of Latin American
+              beans roasted on the lighter side for a well-rounded, expressive cup. Every sip is smooth and reminiscent of chocolate.</p>
+            <h5 id="price"> Price: $24.30</h5>
+
+          </div>
+
+        </div>
+        <a href="cart.html"><button style="cursor:pointer;">Add to Cart</button></a>
       </div>
 
 
@@ -113,21 +142,39 @@
   <script>
     // Get the modal
     var modal = document.getElementById("myModal");
+    var modal2 = document.getElementById("myModal2");
+    var modal3 = document.getElementById("myModal3");
 
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
+    var btn2 = document.getElementById("myBtn2");
+    var btn3 = document.getElementById("myBtn3");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
+    var span2 = document.getElementsByClassName("close2")[0];
+    var span3 = document.getElementsByClassName("close3")[0];
 
     // When the user clicks the button, open the modal
     btn.onclick = function() {
       modal.style.display = "block";
     }
+    btn2.onclick = function() {
+      modal2.style.display = "block";
+    }
+    btn3.onclick = function() {
+      modal3.style.display = "block";
+    }
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
       modal.style.display = "none";
+    }
+    span2.onclick = function() {
+      modal2.style.display = "none";
+    }
+    span3.onclick = function() {
+      modal3.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
@@ -136,7 +183,18 @@
         modal.style.display = "none";
       }
     }
+    window.onclick = function(event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+    window.onclick = function(event) {
+      if (event.target == modal3) {
+        modal3.style.display = "none";
+      }
+    }
   </script>
+
 
 
 </body>
