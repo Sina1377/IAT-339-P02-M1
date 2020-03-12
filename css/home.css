@@ -8,7 +8,7 @@
 /*Youtube Side Menu bar*/
 nav {
   display: flex;
-  top:0;
+  top: 0;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
@@ -19,11 +19,17 @@ nav li {
   margin: auto;
 }
 
+p {
+  font-family: "Futura PT", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  max-width: 500px;
+}
+
 .logo {
   color: #d4af37;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font size: .2em;
+  font size: 0.2em;
   margin-left: 0;
 }
 
@@ -88,7 +94,7 @@ nav li {
     right: 0px;
     height: 75vh;
     top: 8vh;
-    background-color:#F5F5F5;
+    background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,7 +130,7 @@ nav li {
 }
 
 .toggle .line1 {
-  background-color:#d4af37;
+  background-color: #d4af37;
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 
@@ -133,7 +139,7 @@ nav li {
 }
 
 .toggle .line3 {
-  background-color:#d4af37;
+  background-color: #d4af37;
   transform: rotate(45deg) translate(-5.5px, -6px);
 }
 
@@ -141,9 +147,10 @@ nav li {
 body {
   font-size: 1.1em;
   color: #444;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Futura PT", Helvetica, Arial, sans-serif;
+  font-weight: 100;
   background: #fff;
-  margin-top:20px;
+  margin-top: 20px;
   height: 100%;
 }
 
@@ -156,24 +163,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-h2 {
-  font-size: 60px;
-}
-
-h3 {
-  font-size: 54px;
-}
-
-h4 {
-  font-size: 32px;
-}
-
-h5 {
-  font-size: 21px;
-}
-
-h6 {
-  font-size: 18px;
+h1 {
+  color: #333;
+  font-size: 3em;
 }
 
 p {
@@ -298,12 +290,12 @@ a.button-1:hover, a.button-2:hover, button:hover, #contactButton:hover {
   background-image: url("img/p.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   position: relative;
   padding: 1px 0 0 0;
 }
 
-#banner h2 {
+#banner h1 {
   margin: 220px auto 0;
   padding: 0 5%;
   opacity: 0.9;
@@ -333,7 +325,7 @@ a.button-1:hover, a.button-2:hover, button:hover, #contactButton:hover {
   #banner h2 {
     font-size: 3em;
     margin-top: 64px;
-    width:70%;
+    width: 70%;
   }
 
   #banner p.subtitle {
@@ -466,13 +458,14 @@ ul.gallery-list li a:hover {
 .email-list-section {
   background: #f1f6f4;
   padding: 3em 0;
+  margin-bottom: 0;
   color: black;
   background-image: url(../img/nature.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.email-list-section h3 {
+.email-list-section h1 {
   color: #d4af37;
   text-align: center;
   margin-bottom: 1em
@@ -570,7 +563,7 @@ ul.gallery-list li a:hover {
   margin-bottom: 2em;
 }
 
-#price {
+.price {
   color: grey;
   font-size: 22px;
 }
@@ -588,12 +581,17 @@ ul.gallery-list li a:hover {
 /*Footer*/
 footer {
   background: #444;
-  margin-top: 2em;
+  margin-top: 0em;
   color: #d4af37;
   text-align: center;
   padding: 1em 0;
   bottom: 0;
   width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 footer a.logo {
@@ -790,6 +788,10 @@ span.price {
   max-width: 400px;
 }
 
+.contact-section h1 {
+  color: #d4af37;
+}
+
 .contact-section {
   text-align: left;
   padding: 100px 0;
@@ -979,16 +981,62 @@ span.price {
   max-width: 600px;
   padding: 1.5em;
   padding-bottom: 2em;
-
   border-bottom: 1px solid black;
 }
 
-.citation{
+.citation {
   margin: auto;
   padding: 1.5em;
   padding-bottom: 2em;
   max-width: 600px;
   font-size: .9em;
   margin-bottom: 12em;
+}
 
+.primary-color-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  margin: 2em;
+}
+
+.secondary-color-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  margin: 2em;
+}
+
+.primary-color-container img {
+  margin: 15px;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
+}
+
+.secondary-color-container img {
+  margin: 15px;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.styleLink a:hover {
+  color: #000000;
+  ;
+  text-decoration: none;
+}
+
+.styleLink a {
+  color: #d4af37;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#navigation-elements{
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
